@@ -1,0 +1,438 @@
+:root {
+  /* PRIMARY COLORS  */
+  --DesaturatedDark-Cyan: hsl(180, 29%, 50%);
+  --light-DesaturatedDark-Cyan: hsla(180, 29%, 50%, 20%);
+  --menu-color: hsla(180, 29%, 50%, 0.901); 
+
+  /* NEUTRAL COLORS  */
+
+  --Light-Grayish-Cyan-Background: hsl(180, 52%, 96%);
+  --Light-Grayish-Cyan-Filter-Tablets: hsl(180, 31%, 95%);
+  --Dark-Grayish-Cyan: hsl(180, 8%, 52%);
+  --Header-Dark-Grayish-Cyan: rgba(16, 155, 155, 0.378);
+  --grey-light: hsl(180, 4%, 71%);
+  --Very-Dark-Grayish-Cyan: hsl(180, 14%, 20%);
+  --off-color: rgb(160, 6, 6);
+
+  /* TYPOGRAPHY  */
+  --font-spartan: 'League Spartan', sans-serif;
+  --font-body: 15px;
+  --font-weight-title: 500;
+  --font-weight-title-bold: 700;
+}
+
+
+/* header  */
+
+body {
+  background-color: var(--Light-Grayish-Cyan-Filter-Tablets);
+  font-family: var(--font-spartan);
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  height: 160px;
+  background: center / cover no-repeat url(../images/bg-header-mobile.svg),
+    var(--Header-Dark-Grayish-Cyan);
+    display: flex;
+    flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 5px 10px rgba(183, 183, 183, 0.539);
+}
+
+.date_hour_nav {
+  margin: 1rem 0.5rem;
+  text-align: center;
+
+}
+
+.dayli-hour {
+  font-size: 1.7rem;
+  color: white;
+  font-weight: 700;
+}
+
+.nav-burger {
+  z-index: 99;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 1rem; 
+  right: 2rem;
+  background: url(../images/menu-burger-horizontal-svgrepo-com.svg);
+  background-size: 2rem;
+  background-repeat: no-repeat;
+  border: 0;
+  cursor: pointer;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  text-transform: uppercase;
+  padding: 15rem 2.5rem;
+  margin: 0;
+  background-color: var(--menu-color);
+  position: absolute;
+  top: 0;
+  right: -70vw;
+  z-index: 20;
+  height: 100vh;
+  width: 70vw;
+  color: white;
+  font-size: 1.2rem;
+  transition: transform 1s ease-in-out;
+}
+
+.nav-on_off {
+  transform: translateX(-70vw);
+  transition: transform 1s ease-in-out;
+}
+
+nav ul a {
+  color: white;
+}
+
+
+/* DAILY SALAT  */
+
+
+.container__salat {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  list-style: none;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.623);
+  width: 100%;
+  padding: .7rem 3%;
+}
+
+.container__salat div {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem ;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.container__salat p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.container__salat span {
+  color: white;
+  background-color: var(--DesaturatedDark-Cyan);
+  padding: .25rem 0;
+  width: 90%;
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.265);
+  backdrop-filter: blur(5.1px);
+  -webkit-backdrop-filter: blur(5.1px);
+  border: 1px solid rgba(255, 255, 255, 0.579);
+}
+
+
+/* section  */
+
+.contain {
+  width: 90%; 
+  margin: 2.5rem auto 0;
+  background-color: white;
+  border-left: 4px solid var(--DesaturatedDark-Cyan);
+  padding: 1rem;
+  border-radius: 7px;
+  box-shadow: 10px 10px 20px var(--light-DesaturatedDark-Cyan);
+}
+
+.contain__labels {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.contain__labels p {
+  font-size: 1.2rem;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+  color: var(--DesaturatedDark-Cyan);
+  text-transform: uppercase;
+}
+
+.extra-contain  {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+  background-color: var(--DesaturatedDark-Cyan);
+  color: white;
+  padding-block: .5rem;
+
+}
+
+/* IMAGES ICONS   */
+
+.contain__img {
+  background-size: 50px;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+}
+
+.light {
+  background-image: url(../images/light-bulb-idea-svgrepo-com.svg);
+}
+
+.door {
+  background-image: url(../images/door-svgrepo-com.svg);
+}
+
+.lift {
+  background-image: url(../images/lift-elevator-svgrepo-com.svg);
+}
+
+.icon-masjid {
+  background-image: url(../images/mosque-islam-svgrepo-com.svg);
+}
+
+
+/* BUTTON ON OFF */
+
+.on {
+  content: 'on';
+  display: inline-block;
+  margin: 0 0.2rem;
+  color: white;
+  background-color: black;
+  padding: 0.1rem 0.4rem 0;
+  border-radius: 15px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  background-color: var(--DesaturatedDark-Cyan);
+}
+
+.off {
+  display: inline-block;
+  margin: 0 0.2rem;
+  color: white;
+  background-color: black;
+  padding: 0.1rem 0.4rem 0;
+  border-radius: 15px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  background-color: var(--off-color);
+}
+
+.contain__title {
+  font-size: 0.85rem;
+  color: var(--Very-Dark-Grayish-Cyan);
+}
+
+.contain__items {
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.contain__items span {
+  padding-right: 0.8rem;
+  color: var(--grey-light);
+  font-size: 0.8rem;
+}
+
+.contain__items span:not(:first-child)::before {
+  content: '•';
+  margin-right: 0.4rem;
+}
+
+.contain__items::after {
+  content: '';
+  display: block;
+  width: 100%;
+  border-bottom: 0.5px solid var(--grey-light);
+  margin-block: 0.5rem;
+}
+
+.contain__category span {
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin: 0.35rem 0.7rem 0.35rem 0;
+  color: var(--DesaturatedDark-Cyan);
+  background-color: var(--light-DesaturatedDark-Cyan);
+  padding: 0.25rem 0.8rem;
+  display: inline-block;
+}
+
+.automate {
+  width: 90%;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.all__automates {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.automate__timer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0.75rem 0;
+  border-radius: 23px;
+  background: #ffffff;
+  box-shadow: 5px 5px 10px #e0e0e0, -5px -5px 10px #ffffff;
+}
+
+.automate__icon {
+  background-color: var(--DesaturatedDark-Cyan);
+  padding: 0.2rem 0.4rem;
+  color: white;
+}
+
+
+
+/* TEMPS EXTRA  */
+
+.extra-form {
+  width: 100%;
+}
+
+.extra-form-p {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem 0;
+  padding: .5rem;
+}
+
+.extra-form-p label {
+  background-color: var(--DesaturatedDark-Cyan);
+  color: white;
+  padding: .45rem ;
+  box-shadow: 5px 5px 10px #e0e0e0;
+
+}
+
+#extra-icha, #extra-fajr {
+  width: 4rem;
+  border-radius:0 10px 10px 0;
+  border: 2px solid var(--DesaturatedDark-Cyan);
+  box-shadow: 5px 5px 10px #e0e0e0;
+}
+
+input::placeholder {
+  text-align: center;
+  color: var(--DesaturatedDark-Cyan);
+}
+
+.extra-change, .extra-reset {
+  background-color: var(--DesaturatedDark-Cyan);
+  border: 0;
+  border-radius: 15px;
+  padding: .5rem;
+  color: white;
+  box-shadow: 5px 5px 10px #e0e0e0;
+}
+
+footer {
+  height: 2rem;
+}
+
+@media screen and (min-width: 820px) {
+
+  main {
+    width: 700px;
+    margin: 0 auto;
+  }
+
+}
+
+
+/* checkbox  */
+
+.checkbox-contain {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--DesaturatedDark-Cyan);
+  margin-top: 2rem;
+}
+
+.checkbox-contain ul {
+  margin: 0;
+}
+
+.checkbox-li {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+
+.checkbox-label {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  position: relative;
+}
+
+.checkbox-label span {
+  position: absolute;
+}
+
+.checkbox-input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 44px;
+  height: 24px;
+  border-radius: 12px;
+  border: 2px solid black;
+  background: #eee;
+  transition: all 0.4s;
+}
+
+
+.checkbox-input[type="checkbox"]::before {
+  width: 16px;
+  height: 16px;
+  border-radius: 9px;
+  background-color: black;
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 16%;
+  transition: all 0.4s;
+}
+
+.checkbox-input[type="checkbox"]:checked {
+  background-color: var(--DesaturatedDark-Cyan);
+  transition: all 0.4s;
+}
+
+.checkbox-input[type="checkbox"]:checked::before {
+  left: 35%;
+  transition: all 0.4s;
+}
+
+.checkbox-input[type="checkbox"] ~ label .checkbox-on, input[type="checkbox"]:checked ~ label .checkbox-off {
+  opacity: 0;
+}
+
+.checkbox-input[type="checkbox"] ~ label .checkbox-off, input[type="checkbox"]:checked ~ label .checkbox-on {
+  opacity: 1;
+}
+
+.checkbox-input:focus {
+  outline: 1px dotted black;
+}

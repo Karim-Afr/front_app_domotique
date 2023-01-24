@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/mosque-islam-svgrepo-com.svg"
+    />
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- reset and css -->
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+
+    <script src="../scripts/app.js" defer></script>
+    <title>Masjid Assistant</title>
+  </head>
+  <body>
+    <header>
+      <div class="date_hour_nav">
+        <!-- <span class="dayli-date">Mardi 24 Janvier</span> -->
+        <span class="dayli-hour">08:39</span>
+      </div>
+
+      <button class="nav-burger" aria-controls="nav-menu-mobile"></button>
+
+      <nav>
+        <ul class="menu" id="nav-menu-mobile">
+          <li class="active">accueil</li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Lumières</a></li>
+          <li><a href="#">Portes</a></li>
+          <li><a href="#">Ajouter automate</a></li>
+        </ul>
+      </nav>
+      <!-- daily prayer  -->
+      <div class="container__salat">
+        <div>
+          <p>الفجر</p>
+          <span>06h00</span>
+        </div>
+        <div>
+          <p>الظهر</p>
+          <span>13h00</span>
+        </div>
+        <div>
+          <p>العصر</p>
+          <span>15h00</span>
+        </div>
+        <div>
+          <p>المغرب</p>
+          <span>17h00</span>
+        </div>
+        <div>
+          <p>العشاء</p>
+          <span>19h00</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="contain">
+        <div class="contain__labels">
+          <span class="contain__img light"></span>
+          <p>Lumières</p>
+          <span class="on">ON</span>
+        </div>
+        <div class="contain__items">
+          <span>Salles de prière</span>
+          <span>exterieur</span>
+          <span>salle polyvalente</span>
+          
+        </div>
+        <article class="automate">
+          <div class="all__automates">
+            <div class="automate__timer">
+              <p class="automate__timer__before">20</p>
+              <span class="automate__icon">الفجر</span>
+              <p class="automate__timer__after">20</p>
+            </div>
+            <div class="automate__timer">
+              <p class="automate__timer__before">10</p>
+              <span class="automate__icon">الظهر</span>
+              <p class="automate__timer__after">15</p>
+            </div>
+            <div class="automate__timer">
+              <p class="automate__timer__before">20</p>
+              <span class="automate__icon">العصر</span>
+              <p class="automate__timer__after">15</p>
+            </div>
+            <div class="automate__timer">
+              <p class="automate__timer__before">10</p>
+              <span class="automate__icon">المغرب</span>
+              <p class="automate__timer__after">-</p>
+            </div>
+            <div class="automate__timer">
+              <p class="automate__timer__before">-</p>
+              <span class="automate__icon">العشاء</span>
+              <p class="automate__timer__after">20</p>
+            </div>
+          </div>
+          <div class="checkbox-contain">
+            <span>Marche forcée</span>
+            <ul>
+              <li class="checkbox-li">
+                <input type="checkbox" name="power" id="power" class="checkbox-input">
+                <label for="power" class="checkbox-label"><span class="checkbox-on">ON</span> <span class="checkbox-off">OFF</span></label>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <section class="contain">
+        <div>
+          <div class="contain__labels">
+            <span class="contain__img door"></span>
+            <p>PORTES</p>
+            <span class="on">ON</span>
+          </div>
+          <div class="contain__items">
+            <span>Portes mosquée</span><span>Portails</span>
+          </div>
+        </div>
+        <article class="automate">
+          <div class="all__automates">
+            <div class="automate__timer">
+              <p class="automate__timer__before">20</p>
+              <span class="automate__icon">الفجر</span>
+              <p class="automate__timer__after">20</p>
+            </div>
+            <div class="automate__timer">
+              <p class="automate__timer__before">10</p>
+              <span class="automate__icon">الظهر</span>
+              <p class="automate__timer__after">15</p>
+            </div>
+            <div class="automate__timer">
+              <p class="automate__timer__before">20</p>
+              <span class="automate__icon">العصر</span>
+              <p class="automate__timer__after">15</p>
+            </div>
+            <div class="automate__timer">
+              <p class="automate__timer__before">10</p>
+              <span class="automate__icon">المغرب</span>
+              <p class="automate__timer__after">-</p>
+            </div>
+            <div class="automate__timer">
+              <p class="automate__timer__before">-</p>
+              <span class="automate__icon">العشاء</span>
+              <p class="automate__timer__after">20</p>
+            </div>
+          </div>
+          <div class="checkbox-contain">
+            <span>Marche forcée</span>
+            <ul>
+              <li class="checkbox-li">
+                <input type="checkbox" name="power" id="power" class="checkbox-input">
+                <label for="power" class="checkbox-label"><span class="checkbox-on">ON</span> <span class="checkbox-off">OFF</span></label>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <section class="contain">
+        <div class="contain__labels">
+          <span class="contain__img icon-masjid"></span>
+          <p>Automate</p>
+          <span class="off">OFF</span>
+        </div>
+        <div class="contain__items">
+          <span>description</span><span>details</span>
+        </div>
+        <article class="automate">
+          <div class="all__automates">
+            <div class="automate__timer">
+              <p class="automate__timer__before">20</p>
+              <span class="automate__icon">الفجر</span>
+              <p class="automate__timer__after">20</p>
+            </div>
+            <div class="automate__timer">
+              <p class="automate__timer__before">10</p>
+              <span class="automate__icon">الظهر</span>
+              <p class="automate__timer__after">15</p>
+            </div>
+            <div class="automate__timer">
+              <p class="automate__timer__before">20</p>
+              <span class="automate__icon">العصر</span>
+              <p class="automate__timer__after">15</p>
+            </div>
+            <div class="automate__timer">
+              <p class="automate__timer__before">10</p>
+              <span class="automate__icon">المغرب</span>
+              <p class="automate__timer__after">-</p>
+            </div>
+            <div class="automate__timer">
+              <p class="automate__timer__before">-</p>
+              <span class="automate__icon">العشاء</span>
+              <p class="automate__timer__after">20</p>
+            </div>
+          </div>
+          <div class="checkbox-contain">
+            <span>Marche forcée</span>
+            <ul>
+              <li class="checkbox-li">
+                <input type="checkbox" name="power" id="power" class="checkbox-input">
+                <label for="power" class="checkbox-label"><span class="checkbox-on">ON</span> <span class="checkbox-off">OFF</span></label>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <section class="contain">
+        <div class="contain__labels">
+          <span class="contain__img lift"></span>
+          <p>Ascenseur</p>
+          <span class="on">ON</span>
+        </div>
+        <div class="contain__items"></div>
+        <article class="automate">
+          <div class="all__automates">
+            <div class="automate__timer">
+              <p class="automate__timer__before">20</p>
+              <span class="automate__icon">الفجر</span>
+              <p class="automate__timer__after">20</p>
+            </div>
+            <div class="automate__timer">
+              <p class="automate__timer__before">10</p>
+              <span class="automate__icon">الظهر</span>
+              <p class="automate__timer__after">15</p>
+            </div>
+            <div class="automate__timer">
+              <p class="automate__timer__before">20</p>
+              <span class="automate__icon">العصر</span>
+              <p class="automate__timer__after">15</p>
+            </div>
+            <div class="automate__timer">
+              <p class="automate__timer__before">10</p>
+              <span class="automate__icon">المغرب</span>
+              <p class="automate__timer__after">-</p>
+            </div>
+            <div class="automate__timer">
+              <p class="automate__timer__before">-</p>
+              <span class="automate__icon">العشاء</span>
+              <p class="automate__timer__after">20</p>
+            </div>
+          </div>
+          <div class="checkbox-contain">
+            <span>Marche forcée</span>
+            <ul>
+              <li class="checkbox-li">
+                <input type="checkbox" name="power" id="power" class="checkbox-input">
+                <label for="power" class="checkbox-label"><span class="checkbox-on">ON</span> <span class="checkbox-off">OFF</span></label>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+      </section>
+
+      <section class="contain">
+        <div class="extra-contain">
+          <p>Temps extra (minutes)</p>
+        </div>
+        <div class="contain__items"></div>
+        <article class="extra__automate">
+          <form action="" class="extra-form">
+            <div class="extra-form-p">
+                <p>
+                  <label for="extra-fajr">FAJR</label>
+                  <input type="number" name="extra-fajr" id="extra-fajr" placeholder="00"/>
+                </p>
+              <p>
+                <button class="extra-change">CHANGE</button>
+                <button class="extra-reset">RESET</button>
+              </p>
+              </div>
+            <div class="extra-form-p">
+                <p>
+                  <label for="extra-icha">ICHA</label>
+                  <input type="number" name="extra-fajr" id="extra-icha" placeholder="00"/>
+                </p>
+                <p>
+                  <button class="extra-change">CHANGE</button>
+                  <button class="extra-reset">RESET</button>
+                </p>
+            </div>
+
+          </form>
+
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
