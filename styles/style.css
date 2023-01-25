@@ -186,19 +186,19 @@ nav ul a {
 }
 
 .light {
-  background-image: url(./images/light-bulb-idea-svgrepo-com.svg);
+  background-image: url(../images/light-bulb-idea-svgrepo-com.svg);
 }
 
 .door {
-  background-image: url(./images/door-svgrepo-com.svg);
+  background-image: url(../images/door-svgrepo-com.svg);
 }
 
 .lift {
-  background-image: url(./images/lift-elevator-svgrepo-com.svg);
+  background-image: url(../images/lift-elevator-svgrepo-com.svg);
 }
 
 .icon-masjid {
-  background-image: url(./images/mosque-islam-svgrepo-com.svg);
+  background-image: url(../images/mosque-islam-svgrepo-com.svg);
 }
 
 
