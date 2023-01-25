@@ -33,7 +33,7 @@ body {
 header {
   width: 100%;
   height: 160px;
-  background: center / cover no-repeat url(../images/bg-header-mobile.svg),
+  background: center / cover no-repeat url(./images/bg-header-mobile.svg),
     var(--Header-Dark-Grayish-Cyan);
     display: flex;
     flex-direction: column;
@@ -60,7 +60,7 @@ header {
   position: absolute;
   top: 1rem; 
   right: 2rem;
-  background: url(../images/menu-burger-horizontal-svgrepo-com.svg);
+  background: url(./images/menu-burger-horizontal-svgrepo-com.svg);
   background-size: 2rem;
   background-repeat: no-repeat;
   border: 0;
@@ -186,19 +186,19 @@ nav ul a {
 }
 
 .light {
-  background-image: url(../images/light-bulb-idea-svgrepo-com.svg);
+  background-image: url(./images/light-bulb-idea-svgrepo-com.svg);
 }
 
 .door {
-  background-image: url(../images/door-svgrepo-com.svg);
+  background-image: url(./images/door-svgrepo-com.svg);
 }
 
 .lift {
-  background-image: url(../images/lift-elevator-svgrepo-com.svg);
+  background-image: url(./images/lift-elevator-svgrepo-com.svg);
 }
 
 .icon-masjid {
-  background-image: url(../images/mosque-islam-svgrepo-com.svg);
+  background-image: url(./images/mosque-islam-svgrepo-com.svg);
 }
 
 
@@ -436,3 +436,4 @@ footer {
 .checkbox-input:focus {
   outline: 1px dotted black;
 }
+
