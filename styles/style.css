@@ -22,13 +22,17 @@
 }
 
 
+html, body {
+  overflow-x: hidden;
+}
+
 /* header  */
 
 body {
   background-color: var(--Light-Grayish-Cyan-Filter-Tablets);
   font-family: var(--font-spartan);
-  overflow-x: hidden;
 }
+
 
 header {
   width: 100%;
