@@ -1,0 +1,32 @@
+<html>
+  <div class="form-control">
+    <div>
+      <form class="automat-form" action="/add-extra-ishaa" method="POST">
+      <label for="EXTRA_ISHAA">Temps Extra ISHAA (minutes)</label>
+      <input 
+      class="<%= validationErrors.find(e => e.param === 'EXTRA_ISHAA') ? 'invalid' : '' %>"
+      type="number" name="EXTRA_ISHAA" id="EXTRA_ISHAA" step="1" value="<%= EXTRA_ISHAA/60 %>">
+      <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+      <button class="btn" type="submit">Modifier</button>
+    </form>
+    <form class="automat-form" action="/reset-extra-ishaa" method="POST">       
+      <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+      <button class="btn" type="submit">Reset</button>
+    </form>
+    </div>
+    <div>
+      <form class="automat-form" action="/add-extra-fajr" method="POST">
+        <label for="EXTRA_FAJR">Temps Extra FAJR (minutes)</label>
+        <input 
+        class="<%= validationErrors.find(e => e.param === 'EXTRA_FAJR') ? 'invalid' : '' %>"
+        type="number" name="EXTRA_FAJR" id="EXTRA_FAJR" step="1" value="<%= EXTRA_FAJR/60 %>">
+        <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+        <button class="btn" type="submit">Modifier</button>
+      </form>
+      <form class="automat-form" action="/reset-extra-fajr" method="POST">       
+        <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+        <button class="btn" type="submit">Reset</button>
+      </form>
+    </div>
+  </div>
+</html>

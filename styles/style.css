@@ -312,14 +312,26 @@ nav ul a {
 
 /* TEMPS EXTRA  */
 
-.extra-form {
-  width: 100%;
+.extra__automate {
+  display: flex;
 }
 
-.extra-form-p {
+.extra__automate--salat {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
+}
+
+.extra-form {
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.extra-form-p {
+  display: inline-flex;
+  align-items: stretch;
   margin: 1rem 0;
   padding: .5rem;
 }
@@ -351,6 +363,10 @@ input::placeholder {
   padding: .5rem;
   color: white;
   box-shadow: 5px 5px 10px #e0e0e0;
+}
+
+.extra-change {
+  margin-left: 1rem;
 }
 
 footer {
