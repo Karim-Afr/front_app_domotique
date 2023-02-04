@@ -313,7 +313,8 @@ nav ul a {
 /* TEMPS EXTRA  */
 
 .extra__automate {
-  display: flex;
+  display: flex; 
+  margin: 1.5rem 0;
 }
 
 .extra__automate--salat {
@@ -326,14 +327,10 @@ nav ul a {
 .extra-form {
   display: flex;
   justify-content: space-around;
-  
 }
 
-.extra-form-p {
-  display: inline-flex;
-  align-items: stretch;
-  margin: 1rem 0;
-  padding: .5rem;
+.extra-form-p form {
+  display: flex;
 }
 
 .extra-form-p label {
@@ -344,7 +341,7 @@ nav ul a {
 
 }
 
-#extra-icha, #extra-fajr {
+#EXTRA_ISHAA, #EXTRA_FAJR {
   width: 4rem;
   border-radius:0 10px 10px 0;
   border: 2px solid var(--DesaturatedDark-Cyan);

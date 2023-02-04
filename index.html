@@ -277,20 +277,23 @@
         <article class="extra__automate">
           <div class="extra__automate--salat">
             <div class="extra-form-p">
-              <form action="" ></form>
+              <form action="/add-extra-ishaa" method="POST" >
                 <p class="extra-form">
-                  <label for="extra-fajr">FAJR</label>
-                  <input type="number" name="extra-fajr" id="extra-fajr" placeholder="00"/>
+                  <label for="EXTRA_ISHAA">ICHA</label>
+                  <input class="<%= validationErrors.find(e => e.param === 'EXTRA_ISHAA') ? 'invalid' : '' %>"
+                  type="number" name="EXTRA_ISHAA" id="EXTRA_ISHAA" step="1" value="<%= EXTRA_ISHAA/60 %>" placeholder="00">
                 </p>
                 <p>
-                <button class="extra-change">CHANGE</button>
+                  <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                <button class="extra-change" type="submit">MODIFIER</button>
                 </p>
               </form>
               </div>  
             <div>
-              <form action="">
+              <form class="automat-form" action="/reset-extra-ishaa" method="POST">
                 <p>
-                  <button class="extra-reset">RESET</button>
+                  <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                  <button class="extra-reset" type="submit">RESET</button>
                 </p>
               </form>
             </div>
@@ -300,20 +303,23 @@
         <article class="extra__automate">
           <div class="extra__automate--salat">
             <div class="extra-form-p">
-              <form action="" ></form>
+              <form class="automat-form" action="/add-extra-fajr" method="POST" >
                 <p class="extra-form">
-                  <label for="extra-icha">ICHA</label>
-                  <input type="number" name="extra-icha"icha id="extra-icha" placeholder="00"/>
+                  <label for="extra-icha">FAJR</label>
+                  <input class="<%= validationErrors.find(e => e.param === 'EXTRA_FAJR') ? 'invalid' : '' %>"
+                  type="number" name="EXTRA_FAJR" id="EXTRA_FAJR" step="1" value="<%= EXTRA_FAJR/60 %>" placeholder="00"/>
                 </p>
                 <p>
-                <button class="extra-change">CHANGE</button>
+                <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                <button class="extra-change" type="submit">MODIFIER</button>
                 </p>
               </form>
               </div>  
             <div>
-              <form action="">
+              <form class="automat-form" action="/reset-extra-fajr" method="POST">
                 <p>
-                  <button class="extra-reset">RESET</button>
+                  <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                  <button class="extra-reset" ype="submit">RESET</button>
                 </p>
               </form>
             </div>
@@ -324,8 +330,3 @@
 
     <footer></footer>
   </body>
-
-
-<div class="form-control">
-
-    
